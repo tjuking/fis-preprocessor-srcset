@@ -1,0 +1,2 @@
+# fis-preprocessor-srcset
+fis-preprocessor-srcset插件支持解析img或picture标签的srcset属性中的图片路径
