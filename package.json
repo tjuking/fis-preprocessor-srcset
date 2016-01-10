@@ -1,7 +1,7 @@
 {
   "name": "fis-preprocessor-srcset",
-  "version": "0.0.3",
-  "description": "fis-preprocessor-srcset",
+  "version": "0.0.4",
+  "description": "A pre-processor for fis to compile 'srcset'.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -9,8 +9,10 @@
   },
   "keywords": [
     "fis",
-    "picture",
-    "srcset"
+    "srcset",
+    "source",
+    "img",
+    "picture"
   ],
   "author": "tjuking",
   "license": "MIT",
