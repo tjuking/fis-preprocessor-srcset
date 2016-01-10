@@ -17,7 +17,7 @@ fis-preprocessor-srcset插件（[npm地址](https://www.npmjs.com/package/fis-pr
 使用
 ====
 
-```bash
+```
 
     //install
     npm install -g fis-preprocessor-srcset
