@@ -29,7 +29,7 @@ fis-preprocessor-srcset插件（[npm地址](https://www.npmjs.com/package/fis-pr
     fis.merge.config({
         modules: {
             preprocessor: {
-                tpl: "srcset"
+                tpl: "srcset" //如果您使用的是fis-plus，则需要相应调整为"components,ext-lang,srcset"
             }
         },
         ....
