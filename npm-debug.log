@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.2.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/lijin/Repo/trunk/fis-preprocessor-srcset',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/lijin/.npm/fis-preprocessor-srcset/0.0.4/package.tgz not in flight; packing
+9 info lifecycle fis-preprocessor-srcset@0.0.4~prepublish: fis-preprocessor-srcset@0.0.4
+10 silly lifecycle fis-preprocessor-srcset@0.0.4~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/lijin/.npm/fis-preprocessor-srcset/0.0.4/package.tgz',
+11 verbose tar pack   '/Users/lijin/Repo/trunk/fis-preprocessor-srcset' ]
+12 verbose tarball /Users/lijin/.npm/fis-preprocessor-srcset/0.0.4/package.tgz
+13 verbose folder /Users/lijin/Repo/trunk/fis-preprocessor-srcset
+14 verbose addLocalTarball adding from inside cache /Users/lijin/.npm/fis-preprocessor-srcset/0.0.4/package.tgz
+15 silly cache afterAdd fis-preprocessor-srcset@0.0.4
+16 verbose afterAdd /Users/lijin/.npm/fis-preprocessor-srcset/0.0.4/package/package.json not in flight; writing
+17 verbose afterAdd /Users/lijin/.npm/fis-preprocessor-srcset/0.0.4/package/package.json written
+18 silly publish { name: 'fis-preprocessor-srcset',
+18 silly publish   version: '0.0.4',
+18 silly publish   description: 'A pre-processor for fis to compile \'srcset\'.',
+18 silly publish   main: 'index.js',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/tjuking/fis-preprocessor-srcset.git' },
+18 silly publish   keywords: [ 'fis', 'srcset', 'source', 'img', 'picture' ],
+18 silly publish   author: { name: 'tjuking' },
+18 silly publish   license: 'MIT',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   readme: 'fis-preprocessor-srcset\n========================\n\n\nfis-preprocessor-srcset插件（[npm地址](https://www.npmjs.com/package/fis-preprocessor-srcset) [github地址](https://github.com/tjuking/fis-preprocessor-srcset)）支持解析`<img>`或`<picture>`标签的`srcset`属性中的图片路径\n\n\n```html\n\n   \t<picture>\n   \t\t<source srcset="./image/banner-small.png 1x, ./image/banner-large.png 2x"/>\n   \t\t<img src="./image/banner-small.png"/>\n   \t</picture>\n   \t\n```\n\n使用\n====\n\n```\n\n    //install\n    npm install -g fis-preprocessor-srcset\n\n\n    //config\n    vi <project>/fis-conf.js\n\n    fis.merge.config({\n        modules: {\n            preprocessor: {\n                tpl: "srcset" //如果您使用的是fis-plus，则需要相应调整为"components,ext-lang,srcset"\n            }\n        },\n        ....\n    });\n    \n```\n',
+18 silly publish   gitHead: 'dba19d01ccbcf940d22279991e686d41a238ad6d',
+18 silly publish   bugs: { url: 'https://github.com/tjuking/fis-preprocessor-srcset/issues' },
+18 silly publish   homepage: 'https://github.com/tjuking/fis-preprocessor-srcset#readme',
+18 silly publish   _id: 'fis-preprocessor-srcset@0.0.4',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: '301d6a55605448e9da54ddeb560c373e2875be37',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name fis-preprocessor-srcset
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/fis-preprocessor-srcset
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/lijin/.npm/fis-preprocessor-srcset/0.0.4/package.tgz
+26 verbose request uri https://registry.npmjs.org/fis-preprocessor-srcset
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 11:45:32
+29 verbose request using bearer token for auth
+30 verbose request id fbf401d2bc96403c
+31 http request PUT https://registry.npmjs.org/fis-preprocessor-srcset
+32 http 403 https://registry.npmjs.org/fis-preprocessor-srcset
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 12 Jan 2016 03:45:40 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-ams4121-AMS',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1452570339.465323,VS0,VE1417' }
+34 verbose request invalidating /Users/lijin/.npm/registry.npmjs.org/fis-preprocessor-srcset on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.4." : fis-preprocessor-srcset
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:88:13)
+36 verbose stack     at Request.emit (events.js:173:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:83:20)
+36 verbose stack     at Request.emit (events.js:170:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid fis-preprocessor-srcset
+39 verbose cwd /Users/lijin/Repo/trunk/fis-preprocessor-srcset
+40 error Darwin 15.0.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+42 error node v5.2.0
+43 error npm  v3.3.12
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.4." : fis-preprocessor-srcset
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
