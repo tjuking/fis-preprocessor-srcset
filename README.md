@@ -2,7 +2,7 @@ fis-preprocessor-srcset
 ========================
 
 
-fis-preprocessor-srcset插件（[npm地址](https://www.npmjs.com/package/fis-preprocessor-srcset)）支持解析`<img>`或`<picture>`标签的`srcset`属性中的图片路径
+fis-preprocessor-srcset插件（[npm地址](https://www.npmjs.com/package/fis-preprocessor-srcset) [github地址](https://github.com/tjuking/fis-preprocessor-srcset)）支持解析`<img>`或`<picture>`标签的`srcset`属性中的图片路径
 
 
 ```html
