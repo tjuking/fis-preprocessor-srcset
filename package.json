@@ -1,6 +1,6 @@
 {
   "name": "fis-preprocessor-srcset",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "A pre-processor for fis to compile 'srcset'.",
   "main": "index.js",
   "repository": {
