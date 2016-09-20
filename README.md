@@ -26,6 +26,7 @@ fis-preprocessor-srcset插件（[npm地址](https://www.npmjs.com/package/fis-pr
     //config
     vi <project>/fis-conf.js
 
+    //fis3之前
     fis.merge.config({
         modules: {
             preprocessor: {
@@ -33,6 +34,11 @@ fis-preprocessor-srcset插件（[npm地址](https://www.npmjs.com/package/fis-pr
             }
         },
         ....
+    });
+    
+    //fis3
+    fis.match('*.tpl', {
+        preprocessor: fis.plugin('srcset')
     });
     
 ```
